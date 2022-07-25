@@ -16,7 +16,7 @@ body{
 	padding: 5px;
 	width: 80vw;
 	height: 10vh;
-	background-color: #c7dddf;
+	background-color: rgb(7, 18, 229);
 	font-size: x-large;
 	text-align: center;
 	
@@ -37,7 +37,7 @@ body{
 	padding: 5px;
 	width: 80vw;
 	height: 20vh;
-	background-color: #9eb1b3;
+	background-color: #e909b1;
 		
 }
 .option{	
@@ -45,11 +45,12 @@ body{
 	width: 15vw;
 	height: 10vh;
 	font-size: larger;
-	background-color: lightskyblue;
+	background-color: rgb(7, 18, 229);
 	border-radius: 25%;
+    color:
 }
 .option:hover{
-	background-color: lightgoldenrodyellow;
+	background-color: rgb(9, 128, 239);
 }
 .navigation{
 	width: 80vw;
@@ -58,7 +59,7 @@ body{
 	padding: 5px;
 	display: flex;
 	justify-content: space-around;
-	background-color:#c7dddf;
+	background-color:rgb(7, 18, 229);
 }
 
 .evaluate,.next{
@@ -69,9 +70,14 @@ body{
 }
 .evaluate{
 	
-	background-color: #50DBB4;
+	background-color: rgb(7, 18, 229);
 }
 .next{
-	color: white;
-	background-color: #BF3325;
+	color: rgb(7, 18, 229);
+	background-color: #e909b1;
+}
+
+.submit{
+    color: rgb(7, 18, 229);
+    background-color: #e909b1
 }
