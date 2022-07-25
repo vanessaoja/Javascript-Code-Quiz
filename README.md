@@ -1,12 +1,10 @@
-# <Your-Project-Title>
+# <Javascript Code Quiz>
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
+- My motivation for the code challenge was to test my knowledge of Javascript code, implementing buttons, a timer, and a way to track players scores
+- I chose to spend more time on this project since I am enjoying the aesthetics of web pages and working with CSS
+- The code challenged is currently solving my inexperience with CSS and Javascript
 - What did you learn?
 
 ## Table of Contents (Optional)

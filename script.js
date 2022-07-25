@@ -49,61 +49,61 @@ const question = document.getElementById("question");
 // Setting the question text
 question.innerText = Questions[id].q;
 
-// Getting the options
-const op1 = document.getElementById('op1');
-const op2 = document.getElementById('op2');
-const op3 = document.getElementById('op3');
-const op4 = document.getElementById('op4');
+// Getting the answers
+const answer1 = document.getElementById('answer1');
+const answer2 = document.getElementById('answer2');
+const answer3 = document.getElementById('answer3');
+const answer4 = document.getElementById('answer4');
 
 
-// Providing option text
-op1.innerText = Questions[id].a[0].text;
-op2.innerText = Questions[id].a[1].text;
-op3.innerText = Questions[id].a[2].text;
-op4.innerText = Questions[id].a[3].text;
+// Providing answer text
+answer1.innerText = Questions[id].a[0].text;
+answer2.innerText = Questions[id].a[1].text;
+answer3.innerText = Questions[id].a[2].text;
+answer4.innerText = Questions[id].a[3].text;
 
-// Providing the true or false value to the options
-op1.value = Questions[id].a[0].isCorrect;
-op2.value = Questions[id].a[1].isCorrect;
-op3.value = Questions[id].a[2].isCorrect;
-op4.value = Questions[id].a[3].isCorrect;
+// Providing the true or false value to the answers
+answer1.value = Questions[id].a[0].isCorrect;
+answer2.value = Questions[id].a[1].isCorrect;
+answer3.value = Questions[id].a[2].isCorrect;
+answer4.value = Questions[id].a[3].isCorrect;
 
 var selected = "";
 
-// Show selection for op1
-op1.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightgoldenrodyellow";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op1.value;
+// Show selection for answer1
+answer1.addEventListener("click", () => {
+    answer1.style.backgroundColor = "lightgoldenrodyellow";
+    answer2.style.backgroundColor = "lightskyblue";
+    answer3.style.backgroundColor = "lightskyblue";
+    answer4.style.backgroundColor = "lightskyblue";
+    selected = answer1.value;
 })
 
-// Show selection for op2
-op2.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightgoldenrodyellow";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op2.value;
+// Show selection for answer2
+answer2.addEventListener("click", () => {
+    answer1.style.backgroundColor = "lightskyblue";
+    answer2.style.backgroundColor = "lightgoldenrodyellow";
+    answer3.style.backgroundColor = "lightskyblue";
+    answer4.style.backgroundColor = "lightskyblue";
+    selected = answer2.value;
 })
 
-// Show selection for op3
-op3.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightgoldenrodyellow";
-    op4.style.backgroundColor = "lightskyblue";
-    selected = op3.value;
+// Show selection for answer3
+answer3.addEventListener("click", () => {
+    answer1.style.backgroundColor = "lightskyblue";
+    answer2.style.backgroundColor = "lightskyblue";
+    answer3.style.backgroundColor = "lightgoldenrodyellow";
+    answer4.style.backgroundColor = "lightskyblue";
+    selected = answer3.value;
 })
 
-// Show selection for op4
-op4.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightgoldenrodyellow";
-    selected = op4.value;
+// Show selection for answer4
+answer4.addEventListener("click", () => {
+    answer1.style.backgroundColor = "lightskyblue";
+    answer2.style.backgroundColor = "lightskyblue";
+    answer3.style.backgroundColor = "lightskyblue";
+    answer4.style.backgroundColor = "lightgoldenrodyellow";
+    selected = answer4.value;
 })
 
 // Grabbing the evaluate button
