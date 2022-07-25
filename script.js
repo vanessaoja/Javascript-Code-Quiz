@@ -56,13 +56,13 @@ const answer3 = document.getElementById('answer3');
 const answer4 = document.getElementById('answer4');
 
 
-// Providing answer text
+// Creating text for the answer
 answer1.innerText = Questions[id].a[0].text;
 answer2.innerText = Questions[id].a[1].text;
 answer3.innerText = Questions[id].a[2].text;
 answer4.innerText = Questions[id].a[3].text;
 
-// Providing the true or false value to the answers
+// Creating true or false value for the answers
 answer1.value = Questions[id].a[0].isCorrect;
 answer2.value = Questions[id].a[1].isCorrect;
 answer3.value = Questions[id].a[2].isCorrect;
@@ -70,7 +70,7 @@ answer4.value = Questions[id].a[3].isCorrect;
 
 var selected = "";
 
-// Show selection for answer1
+// Hightlight answer1 if chosen
 answer1.addEventListener("click", () => {
     answer1.style.backgroundColor = "lightblue";
     answer2.style.backgroundColor = "purple";
@@ -79,7 +79,7 @@ answer1.addEventListener("click", () => {
     selected = answer1.value;
 })
 
-// Show selection for answer2
+// Hightlight answer2 if chosen
 answer2.addEventListener("click", () => {
     answer1.style.backgroundColor = "purple";
     answer2.style.backgroundColor = "lightblue";
@@ -88,7 +88,7 @@ answer2.addEventListener("click", () => {
     selected = answer2.value;
 })
 
-// Show selection for answer3
+// Hightlight answer3 if chosen
 answer3.addEventListener("click", () => {
     answer1.style.backgroundColor = "purple";
     answer2.style.backgroundColor = "purple";
@@ -97,7 +97,7 @@ answer3.addEventListener("click", () => {
     selected = answer3.value;
 })
 
-// Show selection for answer4
+// Hightlight answer4 if chosen
 answer4.addEventListener("click", () => {
     answer1.style.backgroundColor = "purple";
     answer2.style.backgroundColor = "purple";
