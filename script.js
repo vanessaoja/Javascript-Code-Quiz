@@ -1,31 +1,31 @@
 // JS Questions that will be asked
 const Questions = [{
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
-        { text: "mumbai", isCorrect: false }
+    q: "What type of language is Javascript?",
+    a: [{ text: "object-based", isCorrect: false },
+        { text: "procedural", isCorrect: false },
+        { text: "object-oriented", isCorrect: true },
+        { text: "none of the above", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-        { text: "phuket", isCorrect: false },
-        { text: "Ayutthaya", isCorrect: false },
-        { text: "Bangkok", isCorrect: true }
+    q: "Which of the following keywords is used to define a variable in Javascript?",
+    a: [{ text: "var", isCorrect: false, isSelected: false },
+        { text: "let", isCorrect: false },
+        { text: "A and B", isCorrect: true },
+        { text: "none of the above", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    q: "Upon encountering empty statements, what does the Javascript Interpreter do?",
+    a: [{ text: "throws an error", isCorrect: false },
+        { text: "gives a warning", isCorrect: false },
+        { text: "ignores the statements", isCorrect: true },
+        { text: "none of the above", isCorrect: false }
     ]
 
 }
