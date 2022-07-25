@@ -38,7 +38,7 @@ body{
 	width: 80vw;
 	height: 20vh;
 	background-color: #e909b1;
-		
+	border-style:double;	
 }
 .answer{	
 	padding: 10px;
