@@ -72,37 +72,37 @@ var selected = "";
 
 // Show selection for answer1
 answer1.addEventListener("click", () => {
-    answer1.style.backgroundColor = "lightgoldenrodyellow";
-    answer2.style.backgroundColor = "lightskyblue";
-    answer3.style.backgroundColor = "lightskyblue";
-    answer4.style.backgroundColor = "lightskyblue";
+    answer1.style.backgroundColor = "lightblue";
+    answer2.style.backgroundColor = "purple";
+    answer3.style.backgroundColor = "purple";
+    answer4.style.backgroundColor = "purple";
     selected = answer1.value;
 })
 
 // Show selection for answer2
 answer2.addEventListener("click", () => {
-    answer1.style.backgroundColor = "lightskyblue";
-    answer2.style.backgroundColor = "lightgoldenrodyellow";
-    answer3.style.backgroundColor = "lightskyblue";
-    answer4.style.backgroundColor = "lightskyblue";
+    answer1.style.backgroundColor = "purple";
+    answer2.style.backgroundColor = "lightblue";
+    answer3.style.backgroundColor = "purple";
+    answer4.style.backgroundColor = "purple";
     selected = answer2.value;
 })
 
 // Show selection for answer3
 answer3.addEventListener("click", () => {
-    answer1.style.backgroundColor = "lightskyblue";
-    answer2.style.backgroundColor = "lightskyblue";
-    answer3.style.backgroundColor = "lightgoldenrodyellow";
-    answer4.style.backgroundColor = "lightskyblue";
+    answer1.style.backgroundColor = "purple";
+    answer2.style.backgroundColor = "purple";
+    answer3.style.backgroundColor = "lightblue";
+    answer4.style.backgroundColor = "purple";
     selected = answer3.value;
 })
 
 // Show selection for answer4
 answer4.addEventListener("click", () => {
-    answer1.style.backgroundColor = "lightskyblue";
-    answer2.style.backgroundColor = "lightskyblue";
-    answer3.style.backgroundColor = "lightskyblue";
-    answer4.style.backgroundColor = "lightgoldenrodyellow";
+    answer1.style.backgroundColor = "purple";
+    answer2.style.backgroundColor = "purple";
+    answer3.style.backgroundColor = "purple";
+    answer4.style.backgroundColor = "lightblue";
     selected = answer4.value;
 })
 
