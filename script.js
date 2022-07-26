@@ -107,7 +107,7 @@ answer4.addEventListener("click", () => {
 })
 
 // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("evaluate");
+const evaluate = document.getElementById("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
@@ -126,7 +126,7 @@ iterate("0");
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
+const next = document.getElementById('next');
 var id = 0;
 
 next.addEventListener("click", () => {
