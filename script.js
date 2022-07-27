@@ -32,6 +32,8 @@ const Questions = [{
 
 ]
 
+var currentQuestionIndex = 0;
+
 // Set start
 var start = true;
 
@@ -47,7 +49,7 @@ const question = document.getElementById("question");
 
 
 // Setting the question text
-question.innerText = Questions[id].q;
+question.innerText = Questions[currentQuestionIndex].q;
 
 // Getting the answers
 const answer1 = document.getElementById('answer1');
@@ -57,16 +59,16 @@ const answer4 = document.getElementById('answer4');
 
 
 // Creating text for the answer
-answer1.innerText = Questions[id].a[0].text;
-answer2.innerText = Questions[id].a[1].text;
-answer3.innerText = Questions[id].a[2].text;
-answer4.innerText = Questions[id].a[3].text;
+answer1.innerText = Questions[currentQuestionIndex].a[0].text;
+answer2.innerText = Questions[currentQuestionIndex].a[1].text;
+answer3.innerText = Questions[currentQuestionIndex].a[2].text;
+answer4.innerText = Questions[currentQuestionIndex].a[3].text;
 
 // Creating true or false value for the answers
-answer1.value = Questions[id].a[0].isCorrect;
-answer2.value = Questions[id].a[1].isCorrect;
-answer3.value = Questions[id].a[2].isCorrect;
-answer4.value = Questions[id].a[3].isCorrect;
+answer1.value = Questions[currentQuestionIndex].a[0].isCorrect;
+answer2.value = Questions[currentQuestionIndex].a[1].isCorrect;
+answer3.value = Questions[currentQuestionIndex].a[2].isCorrect;
+answer4.value = Questions[currentQuestionIndex].a[3].isCorrect;
 
 var selected = "";
 
@@ -76,7 +78,7 @@ answer1.addEventListener("click", () => {
     answer2.style.backgroundColor = "purple";
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "purple";
-    selected = answer1.value;
+    selected = answer3.value;
 })
 
 // Hightlight answer2 if chosen
@@ -85,7 +87,7 @@ answer2.addEventListener("click", () => {
     answer2.style.backgroundColor = "lightblue";
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "purple";
-    selected = answer2.value;
+    selected = answer1.value;
 })
 
 // Hightlight answer3 if chosen
@@ -110,8 +112,9 @@ answer4.addEventListener("click", () => {
 const evaluate = document.getElementById("evaluate");
 
 // Evaluate method
-evaluate[0].addEventListener("click", () => {
-    if (selected == "true") {
+evaluate.addEventListener("click", () => {
+    var selected = Questions[currentQuestionIndex].isCorrect;
+    if (selected == true) {
         result[0].innerHTML = "True";
         result[0].style.color = "green";
     } else {
@@ -122,19 +125,19 @@ evaluate[0].addEventListener("click", () => {
 }
 
 if (start) {
-iterate("0");
+iterate[0];
 }
 
 // Next button and method
 const next = document.getElementById('next');
-var id = 0;
+
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
-    id++;
-    iterate(id);
-    console.log(id);
+if (currentQuestionIndex < 2) {
+    currentQuestionIndex++;
+    iterate(currentQuestionIndex);
+    console.log(currentQuestionIndex);
 }
 
 })
