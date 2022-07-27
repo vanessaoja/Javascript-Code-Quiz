@@ -28,8 +28,16 @@ const Questions = [{
         { text: "none of the above", isCorrect: false }
     ]
 
+},
+{
+    id: 3, 
+    q: "What keyword is used to check whether a given property is valid or not?",
+    a: [{text: "in", isCorrect: true},
+        {text: "is in", isCorrect: false},
+        {text: "exists", isCorrect: false},
+        {text: "lies" , isCorrect: false}
+    ]
 }
-
 ]
 
 var currentQuestionIndex = 0;
@@ -87,7 +95,7 @@ answer2.addEventListener("click", () => {
     answer2.style.backgroundColor = "lightblue";
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "purple";
-    selected = answer1.value;
+    selected = answer3.value;
 })
 
 // Hightlight answer3 if chosen
@@ -105,7 +113,7 @@ answer4.addEventListener("click", () => {
     answer2.style.backgroundColor = "purple";
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "lightblue";
-    selected = answer4.value;
+    selected = answer1.value;
 })
 
 // Grabbing the evaluate button
