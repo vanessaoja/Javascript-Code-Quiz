@@ -5,7 +5,7 @@ const Questions = [{
     a: [{ text: "object-based", isCorrect: false },
         { text: "procedural", isCorrect: false },
         { text: "object-oriented", isCorrect: true },
-        { text: "none of the above", isCorrect: false }
+        { text: "none of the above", isCorrect: false },
     ]
 
 },
@@ -15,7 +15,7 @@ const Questions = [{
     a: [{ text: "var", isCorrect: false, isSelected: false },
         { text: "let", isCorrect: false },
         { text: "A and B", isCorrect: true },
-        { text: "none of the above", isCorrect: false }
+        { text: "none of the above", isCorrect: false },
     ]
 
 },
@@ -25,7 +25,7 @@ const Questions = [{
     a: [{ text: "throws an error", isCorrect: false },
         { text: "gives a warning", isCorrect: false },
         { text: "ignores the statements", isCorrect: true },
-        { text: "none of the above", isCorrect: false }
+        { text: "none of the above", isCorrect: false },
     ]
 
 },
@@ -35,10 +35,10 @@ const Questions = [{
     a: [{text: "in", isCorrect: true},
         {text: "is in", isCorrect: false},
         {text: "exists", isCorrect: false},
-        {text: "lies" , isCorrect: false}
+        {text: "lies" , isCorrect: false},
     ]
 }
-]
+];
 
 var currentQuestionIndex = 0;
 
@@ -46,7 +46,7 @@ var currentQuestionIndex = 0;
 var start = true;
 
 // Iterate
-function iterate(id) {
+function iterate(currentQuestionIndex) {
 
 // Getting the result display section
 var result = document.getElementsByClassName("result");
@@ -87,7 +87,7 @@ answer1.addEventListener("click", () => {
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "purple";
     selected = answer3.value;
-})
+});
 
 // Hightlight answer2 if chosen
 answer2.addEventListener("click", () => {
@@ -96,7 +96,7 @@ answer2.addEventListener("click", () => {
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "purple";
     selected = answer3.value;
-})
+});
 
 // Hightlight answer3 if chosen
 answer3.addEventListener("click", () => {
@@ -114,7 +114,7 @@ answer4.addEventListener("click", () => {
     answer3.style.backgroundColor = "purple";
     answer4.style.backgroundColor = "lightblue";
     selected = answer1.value;
-})
+});
 
 // Grabbing the evaluate button
 const evaluate = document.getElementById("evaluate");
@@ -129,7 +129,7 @@ evaluate.addEventListener("click", () => {
         result[0].innerHTML = "False";
         result[0].style.color = "red";
     }
-})
+});
 }
 
 if (start) {
@@ -142,10 +142,10 @@ const next = document.getElementById('next');
 
 next.addEventListener("click", () => {
 start = false;
-if (currentQuestionIndex < 2) {
+if (currentQuestionIndex < 3) {
     currentQuestionIndex++;
     iterate(currentQuestionIndex);
     console.log(currentQuestionIndex);
 }
 
-})
+});
