@@ -40,7 +40,7 @@ const Questions = [{
 }
 ];
 
-var currentQuestionIndex = 0;
+var id = 0;
 
 // Set start
 var start = true;
